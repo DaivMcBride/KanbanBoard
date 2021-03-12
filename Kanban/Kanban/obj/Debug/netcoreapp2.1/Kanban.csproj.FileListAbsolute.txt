@@ -1,0 +1,14 @@
+C:\Users\dmcbride\Desktop\Kanban\Kanban\Kanban\bin\Debug\netcoreapp2.1\Kanban.deps.json
+C:\Users\dmcbride\Desktop\Kanban\Kanban\Kanban\bin\Debug\netcoreapp2.1\Kanban.runtimeconfig.json
+C:\Users\dmcbride\Desktop\Kanban\Kanban\Kanban\bin\Debug\netcoreapp2.1\Kanban.runtimeconfig.dev.json
+C:\Users\dmcbride\Desktop\Kanban\Kanban\Kanban\bin\Debug\netcoreapp2.1\Kanban.dll
+C:\Users\dmcbride\Desktop\Kanban\Kanban\Kanban\obj\Debug\netcoreapp2.1\Kanban.csprojAssemblyReference.cache
+C:\Users\dmcbride\Desktop\Kanban\Kanban\Kanban\obj\Debug\netcoreapp2.1\Kanban.csproj.CoreCompileInputs.cache
+C:\Users\dmcbride\Desktop\Kanban\Kanban\Kanban\obj\Debug\netcoreapp2.1\Kanban.RazorAssemblyInfo.cache
+C:\Users\dmcbride\Desktop\Kanban\Kanban\Kanban\obj\Debug\netcoreapp2.1\Kanban.RazorAssemblyInfo.cs
+C:\Users\dmcbride\Desktop\Kanban\Kanban\Kanban\obj\Debug\netcoreapp2.1\Kanban.AssemblyInfoInputs.cache
+C:\Users\dmcbride\Desktop\Kanban\Kanban\Kanban\obj\Debug\netcoreapp2.1\Kanban.AssemblyInfo.cs
+C:\Users\dmcbride\Desktop\Kanban\Kanban\Kanban\obj\Debug\netcoreapp2.1\Kanban.RazorTargetAssemblyInfo.cache
+C:\Users\dmcbride\Desktop\Kanban\Kanban\Kanban\bin\Debug\netcoreapp2.1\Kanban.pdb
+C:\Users\dmcbride\Desktop\Kanban\Kanban\Kanban\obj\Debug\netcoreapp2.1\Kanban.dll
+C:\Users\dmcbride\Desktop\Kanban\Kanban\Kanban\obj\Debug\netcoreapp2.1\Kanban.pdb

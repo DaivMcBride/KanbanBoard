@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html ng-app="kanbanBoard" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ng="http://angularjs.org">
+<head>
+    <meta charset="utf-8" />
+    <title>Kanban</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/Kanban.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--<script type="text/javascript" src="/Scripts/angular-mocks.js"></script>-->
+    <script type="text/javascript" src="/Scripts/angular.min.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-ui/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Scripts/KanbanController.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body ng-controller="kanbanController">
+    <div class="topheader">
+        <h1 class="topheadertext">Kanban Challange</h1>
+    </div>
+
+    
+   
+    
+
+
+    <div class="board">
+        <table style="float:right;">
+            <tr>
+                <td>
+                    <div class="swimlane" id="backlog">
+                        <div class="swimheader">Backlog</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="swimlane" id="progress">
+                        <div class="swimheader">In Progress</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="swimlane" id="complete">
+                        <div class="swimheader">Complete</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="swimlane" id="backlog">
+                        <div class="swimboard">
+
+                            <div class="add">
+                                <i class="fa fa-plus"></i><input class="add" type="button" value="Try it" ng-click="sendRequest()" />
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="swimlane" id="progress">
+                        <div class="swimboard"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="swimlane" id="complete">
+                        <div class="swimboard"></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
