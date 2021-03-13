@@ -43,25 +43,59 @@
                     </div>
                 </td>
             </tr>
-            <tr>
+            <tr style="height:500px;">
                 <td>
                     <div class="swimlane" id="backlog">
                         <div class="swimboard">
+                            <div ng-click="activate(card)" class="{{getClass(card)}}" ng-repeat="card in board.backlog.cards">
+                                <div>
+                                    <i ng-disabled="cardBeingCreated()" ng-click="toRigth(card)" ng-hide="isCreate(card)" class="arrow right"></i>
+                                    <input placeholder="Ender information here" ng-disabled="isDisabled(card)" class="cardinput" type="text" ng-model="card.description">
 
-                            <div class="add">
-                                <i class="fa fa-plus"></i><input class="add" type="button" value="Try it" ng-click="sendRequest()" />
+                                </div>
+
+                                <p ng-hide="isCreate(card)" class="user">{{card.user}}</p>
+                                <p ng-hide="isCreate(card)" class="date">{{card.date}}</p>
+                                <p ng-show="isCreate(card)" class="user">...Creating</p>
+                                <input ng-show="isCreate(card)" class="date" type="button" value="save" ng-click="saveCard(card )"/>
+                            </div>
+                            <div class="add" ng-hide="cardBeingCreated()">
+                                <i class="fa fa-plus"></i><input class="add" type="button" value="Add Card" ng-click="addCard()" />
                             </div>
                         </div>
                     </div>
                 </td>
                 <td>
                     <div class="swimlane" id="progress">
-                        <div class="swimboard"></div>
+                        <div class="swimboard">
+                            <div ng-click="activate(card)"  class="{{getClass(card)}}" ng-repeat="card in board.inProgress.cards">
+                                <div><i ng-disabled="cardBeingCreated()" ng-click="toLeft(card)" class="arrow left"></i>
+                                    <p class="cardinput" type="text">
+                                        {{card.description}}
+                                        </p><i ng-disabled="cardBeingCreated()" ng-click="toRigth(card)" class="arrow right"></i>
+
+                                </div>
+
+                                <p  class="user">{{card.user}}</p>
+                                <p  class="date">{{card.date}}</p>
+                            </div>
+                        </div>
                     </div>
                 </td>
                 <td>
                     <div class="swimlane" id="complete">
-                        <div class="swimboard"></div>
+                        <div class="swimboard">
+                            <div ng-click="activate(card)"  class="{{getClass(card)}}" ng-repeat="card in board.complete.cards">
+                                <div><i ng-disabled="cardBeingCreated()" ng-click="toLeft(card)" class="arrow left"></i>
+                                    <p class="cardinput" type="text">{{card.description}}</p>
+
+                                   
+                                </div>
+
+                                <p class="user">{{card.user}}</p>
+                                <p class="date">{{card.date}}</p>
+                            </div>
+                        </div>
                     </div>
                 </td>
             </tr>

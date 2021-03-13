@@ -12649,11 +12649,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dmcbride\\Desktop\\Kanban\\Kanban\\Kanban\\Kanban.csproj",
+      "projectUniqueName": "C:\\Users\\dmcbride\\Desktop\\Kanban\\KanbanSet\\Kanban\\Kanban\\Kanban.csproj",
       "projectName": "Kanban",
-      "projectPath": "C:\\Users\\dmcbride\\Desktop\\Kanban\\Kanban\\Kanban\\Kanban.csproj",
+      "projectPath": "C:\\Users\\dmcbride\\Desktop\\Kanban\\KanbanSet\\Kanban\\Kanban\\Kanban.csproj",
       "packagesPath": "C:\\Users\\dmcbride\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dmcbride\\Desktop\\Kanban\\Kanban\\Kanban\\obj\\",
+      "outputPath": "C:\\Users\\dmcbride\\Desktop\\Kanban\\KanbanSet\\Kanban\\Kanban\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

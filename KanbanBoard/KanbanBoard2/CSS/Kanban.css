@@ -61,11 +61,11 @@
     font-weight: bold;
     font-size: 36px;
     color: #FFFFFF;
-    height: auto;
+    height: 650px;
     text-align: center;
-    overflow-y:hidden;
-    margin-top:30px;
-    margin-left:10px;
+    overflow-y: scroll;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 .add {
     border: none;
@@ -78,10 +78,73 @@
     font-weight: bold;
     font-size: 26px;
     color: #FFFFFF;
+    height: 60px;
+    text-align: center;
+    
+}
+
+.cardinput {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    width: 65%;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+.redcard {
+    padding: 10px,10px,10px,10px;
+    background: #FFFFFF;
+    border: 5px solid #bf1111;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
     height: auto;
     text-align: center;
     overflow-y: hidden;
-    
+    margin-top: 16px;
+    min-height: 40px;
+    width: 90%;
+    margin-left:10px;
+}
+.card {
+    padding: 10px,10px,10px,10px;
+    align-content: center;
+    background: #FFFFFF;
+    border: 5px solid #0066FF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    height: auto;
+    text-align: center;
+    overflow-y: hidden;
+    margin-top: 16px;
+    min-height: 40px;
+    width: 90%;
+    margin-left: 10px;
+}
+.date{
+    vertical-align:bottom;
+    float:right;
+}
+.user {
+    vertical-align: bottom;
+    float: left;
 }
 #backlog {
     margin-right: 60px;
@@ -91,4 +154,48 @@
 }
 #complete{
     margin-right:60px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-right: 15px;
+    float: right;
+    margin-top: 15%;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-left: 15px;
+    float: left;
+    margin-top: 15%;
 }

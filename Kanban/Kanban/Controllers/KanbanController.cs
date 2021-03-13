@@ -56,12 +56,12 @@ namespace Kanban.Controllers
         }
 
         // GET: api/Kanban/5
-        [HttpGet("{cards}", Name = "Get")]
-        public string Get(Card cards)
+        [HttpGet("{id}", Name = "Get")]
+        public string Get(string id)
         {
 
 
-           // Card cards = JsonConvert.DeserializeObject<Card>(id);
+           Card cards = JsonConvert.DeserializeObject<Card>(id);
             cards.CardProgress = LaneType.Backlog;
             cards.Date = DateTime.Now.ToShortDateString();
             var board = _cache.Get<Board>("currentState");
@@ -81,9 +81,9 @@ namespace Kanban.Controllers
             return "";
         }
 
-        // POST: api/Kanban
+        // POST: api/Kanban/6
         [HttpPost("{id}")]
-        public void Post(string id, [FromBody] string value)
+        public void Post(string id)
         {
             Card cards = JsonConvert.DeserializeObject<Card>(id);
             var board = _cache.Get<Board>("currentState");
@@ -101,13 +101,15 @@ namespace Kanban.Controllers
 
         // PUT: api/Kanban/5
         [HttpPut("{id}")]
-        public void Put(string id, [FromBody] string value)
+        public void Put(string id )
         {
-
+           // Card cards = value;
             Card cards = JsonConvert.DeserializeObject<Card>(id);
             cards.CardProgress = LaneType.Backlog;
             cards.Date = DateTime.Now.ToShortDateString();
             var board = _cache.Get<Board>("currentState");
+            cards.ID = board.LastID + 1;
+            board.LastID = cards.ID;
             BoardManager.AddCardToBoard(board, cards);
 
             _cache.Set("currentState", board, TimeSpan.FromDays(1));

@@ -14,7 +14,6 @@ namespace Kanban
 {
     public class Startup
     {
-        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -29,7 +28,8 @@ namespace Kanban
             {
                 builder.AllowAnyOrigin()
                        .AllowAnyMethod()
-                       .AllowAnyHeader();
+                       .AllowAnyHeader()
+                       ;
             }));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
