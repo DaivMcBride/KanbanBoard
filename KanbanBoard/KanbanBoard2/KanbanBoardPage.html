@@ -28,8 +28,8 @@
         <table style="float:right;">
             <tr>
                 <td>
-                    <div class="swimlane" id="backlog">
-                        <div class="swimheader">Backlog</div>
+                    <div class="swimlane backlog" id="backlog">
+                        <div class="swimheader backlog">Backlog</div>
                     </div>
                 </td>
                 <td>
@@ -38,26 +38,26 @@
                     </div>
                 </td>
                 <td>
-                    <div class="swimlane" id="complete">
-                        <div class="swimheader">Complete</div>
+                    <div class="swimlane complete" id="complete">
+                        <div class="swimheader complete">Complete</div>
                     </div>
                 </td>
             </tr>
             <tr style="height:500px;">
                 <td>
                     <div class="swimlane" id="backlog">
-                        <div class="swimboard">
-                            <div ng-click="activate(card)" class="{{getClass(card)}}" ng-repeat="card in board.backlog.cards">
+                        <div class="swimboard backlog">
+                            <div ng-click="activate(card)" class="{{getClass(card)}} " ng-repeat="card in board.backlog.cards">
                                 <div>
                                     <i ng-disabled="cardBeingCreated()" ng-click="toRigth(card)" ng-hide="isCreate(card)" class="arrow right"></i>
-                                    <input placeholder="Ender information here" ng-disabled="isDisabled(card)" class="cardinput" type="text" ng-model="card.description">
+                                    <input placeholder="Ender description here" ng-disabled="isDisabled(card)" class="cardinput" type="text" ng-model="card.description">
 
                                 </div>
 
                                 <p ng-hide="isCreate(card)" class="user">{{card.user}}</p>
                                 <p ng-hide="isCreate(card)" class="date">{{card.date}}</p>
                                 <p ng-show="isCreate(card)" class="user">...Creating</p>
-                                <input ng-show="isCreate(card)" class="date" type="button" value="save" ng-click="saveCard(card )"/>
+                                <input ng-show="isCreate(card)" class="date save" type="button" value="save" ng-click="saveCard(card )"/>
                             </div>
                             <div class="add" ng-hide="cardBeingCreated()">
                                 <i class="fa fa-plus"></i><input class="add" type="button" value="Add Card" ng-click="addCard()" />
@@ -84,7 +84,7 @@
                 </td>
                 <td>
                     <div class="swimlane" id="complete">
-                        <div class="swimboard">
+                        <div class="swimboard complete">
                             <div ng-click="activate(card)"  class="{{getClass(card)}}" ng-repeat="card in board.complete.cards">
                                 <div><i ng-disabled="cardBeingCreated()" ng-click="toLeft(card)" class="arrow left"></i>
                                     <p class="cardinput" type="text">{{card.description}}</p>
